@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+// Background
+
+body {
+    width: 100%;
+    height: 100vh;
+
+    background: linear-gradient(167.96deg, #FFD600 0%, rgba(255, 134, 0, 0.583333) 99.99%, rgba(255, 0, 0, 0) 100%);}
+
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+// H1 styles
+
+h1 {
+    padding: 0 4rem;
+
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 36px;
+
+    color: #000000;
+
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+// Calculator container
+
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items:flex-start;
+
+    width: 317px;
+    height: 450px;
+
+    background: rgba(43, 43, 43, 0.5);
+    border-radius: 18px;
+}
+
+
+// Calculator screen
+
+.calculator-screen {
+    position: absolute;
+    margin-top: 3rem;
+
+    text-align: end;
+
+    width: 275px;
+    height: 75px; 
+
+    background: rgba(124, 124, 124, 0.5);
+    border-radius: 18px;
+
+    .previousNumberText, .currentNumberText {
+        margin: 1rem;
+
+        color: white;
+    }
+}
+
+
+// Calculator buttons
+
+.calculator-buttons {
+    margin-top: 14rem;
+
+    width: 275px;
+    height: 285px;
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1px 1px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". . . . ."
+      ". . . . ."
+      ". . . . ."
+      ". . . . .";
+
+      background-color: rgba(124, 124, 124, 0.5);      
+      border-radius: 18px;
+
+
+      .delete {
+          grid-column: 5/6;
+          grid-row: 1/3;
+      }
+}
+
+
+// calculator buttons styles
+
+
+.calc-btn {
+    padding: 1.5rem;
+
+    text-align: center;
+    color: white; 
+
+    cursor: pointer;
+}
